@@ -1,0 +1,77 @@
+body{
+    background-color: white;
+}
+h1{text-align: center ; color: blue }
+h4{
+    font-size: 1rem;
+}
+
+.rounded-circle {
+    width: 320px;
+    height: 320px;
+}
+header{background-color: lightsalmon ; font-size: medium ; font-family: 'Times New Roman', Times, serif}
+footer{clear:both;background-color:rgb(100, 237, 141) ;font-size: medium; text-align: center;font-style: italic}
+.section-header{
+    color: blue;
+    font-family: cursive;
+    font-size: medium
+
+}
+.sideImage{
+     background-image:url("bgg.jpg");
+}
+
+.aside-header {
+    float: right;
+}
+    
+.hobbies-header{
+    
+background-color: rgb(119, 162, 69);
+
+border-style: ridge;
+
+float: left;
+
+width: 1020px;
+}
+
+#schedule-header{
+    
+background-color: #45A29E;
+
+border-style: ridge;
+
+float: left;
+
+width: 1020px;
+
+}
+#past-section {
+
+    background-color: #66FCF1;
+    
+    float: left;
+    
+    width: 1020px;
+    
+    border-style: ridge;
+    
+}
+   
+   
+    
+    
+#future-section {
+    
+    background-color: #c5c6c7;
+    
+    float: left;
+    
+    width: 1020px;
+    
+    border-style: ridge;
+    
+}
+    
