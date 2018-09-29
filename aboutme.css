@@ -1,0 +1,11 @@
+.aside-header {
+    float: right;
+    height: 50; 
+}
+div{
+    text-align: center;
+}
+footer{clear:both;background-color:rgb(100, 237, 141) ;font-size: medium; text-align: center;font-style: italic}
+.hmmm{
+text-align: center;
+}
