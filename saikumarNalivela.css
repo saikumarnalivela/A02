@@ -75,4 +75,10 @@ width: 1020px;
     border-style: ridge;
     
 }
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: repeat(auto-fit, 100px);
+}
     

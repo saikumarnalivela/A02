@@ -12,7 +12,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./game.css">
+  <link rel="stylesheet" href="./cal.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -26,56 +26,47 @@
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="game.html">Tic Tack Toe</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="aboutme.html">About Me</a>
             </li>
           </ul>
         </div>
       </nav>
-  <header>
-    <h1>Tic Tac Toe</h1>
-  </header>
-  <main>
-    <section id="upper-left"> </section>
-    <section id="upper-mid"> </section>
-    <section id="upper-right"> </section>
-
-    <section id="center-left"> </section>
-    <section id="center-mid"> </section>
-    <section id="center-right"> </section>
-
-    <section id="lower-left"> </section>
-    <section id="lower-mid"> </section>
-    <section id="lower-right"> </section>
-  </main>
-  <aside>
-    <h1>Specification</h1>
-    <section>
-      <ul>
-        <li>Uses full-width header and footer.</li>
-        <li>Uses main 3 x 3 css grid, each with a section.</li>
-        <li>When user clicks a childless section, it adds an X.</li>
-        <li>If the move was valid, it selects a section for the computer and adds an O.</li>
-      </ul>
-      <ol>
-        <li>Improve the computer's selection algorithm.</li>
-        <li>Add an algorithm to check for a winner.</li>
-        <li>If winner, announce the winner and end the game.</li>
-        <li>Add "Play again?" button to clear the board.</li>
-        <li>Combine AddX and AddO into a single function.</li>
-      </ol>
-    </section>
-  </aside>
-  <footer>
-    <h4>
-      <span>Saikumar Nalievla Game</span>
       
-    </h4>
+<div class="mycalc">
+	<form name="calculator" id="calculator">
+		<input type="text" name="inputwindow" id="inputwindow">
+		<div>
+			<input type="button" id="one" value="1" onclick="takeValue(document.getElementById('one').value)">
+			<input type="button" id="two" value="2" onclick="takeValue(document.getElementById('two').value)">
+			<input type="button" id="three" value="3" onclick="takeValue(document.getElementById('three').value)">
+			<input type="button" id="plus" value="+" onclick="takeValue(document.getElementById('plus').value)">
+	    </div>
+	    <div>
+			<input type="button" id="four" value="4" onclick="takeValue(document.getElementById('four').value)">
+			<input type="button" id="five" value="5" onclick="takeValue(document.getElementById('five').value)">
+			<input type="button" id="six" value="6" onclick="takeValue(document.getElementById('six').value)">
+			<input type="button" id="minus" value="-" onclick="takeValue(document.getElementById('minus').value)">
+		</div>
+		<div>
+			<input type="button" id="seven" value="7" onclick="takeValue(document.getElementById('seven').value)">
+			<input type="button" id="eight" value="8" onclick="takeValue(document.getElementById('eight').value)">
+			<input type="button" id="nine" value="9" onclick="takeValue(document.getElementById('nine').value)">
+			<input type="button" id="by" value="*" onclick="takeValue(document.getElementById('by').value)">
+	    </div>
+	    <div>
+			<input type="button" id="zero" value="0" onclick="takeValue(document.getElementById('zero').value)">
+			<input type="button" id="decimal" value="." onclick="takeValue(document.getElementById('decimal').value)">
+			<input type="button" id="devide" value="/" onclick="takeValue(document.getElementById('devide').value)">
+			<input type="button" id="percent" value="%" onclick="takeValue(document.getElementById('percent').value)">	
+	    </div>
+	    <div class="results">
+			<input type="button" id="equal" value="=" onclick="calculateResult()">
+			<button type="button" id="clear" value="" onclick="clearInput(document.getElementById('clear').value)">Clear</button>
+	    </div>
 
-  </footer>
-  <script src="./game.js" defer></script>
+	</form>	
+    </div>
+  <script src="./cal.js" defer></script>
 
 </body>
 
